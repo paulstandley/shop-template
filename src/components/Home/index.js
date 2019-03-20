@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <FirebaseContext.Consumer>
       {firebase => {
-        console.log(firebase.auth.currentUser)
+        console.log(firebase)
         return <div>I've access to Firebase and render your email.{firebase.auth.currentUser ? <strong>{firebase.auth.currentUser.email}</strong> : <strong> Sign In</strong>}</div>;
       }}
     </FirebaseContext.Consumer>
