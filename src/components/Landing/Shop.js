@@ -16,7 +16,13 @@ const Shop = () => (
     .catch(function(error) {
         console.error("Error adding document: ", error);
     });
-      return <div>I've access to Firebase and render something.</div>;
+    const inst = firebase.docRef.collection("users").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          console.log(`${doc}`);
+      });
+  });
+
+      return <div>I've access to Firebase and render something {inst ? <h2>true</h2> : <h2>false</h2> }.</div>;
     }}
   </FirebaseContext.Consumer>
 );
