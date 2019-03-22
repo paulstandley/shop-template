@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Shop from './Shop';
 
-const Landing = () => {
-  return (
-    <div>
-      <h1>Landing</h1>
-    </div>
-  )
+class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+  render() { 
+    return ( 
+      <div>
+        <h1>Hi From Landing</h1>
+        <Shop />
+      </div>
+     );
+  }
 }
-
-export default Landing
+ 
+export default Landing;
