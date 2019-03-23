@@ -4,6 +4,18 @@ import  { FirebaseContext } from '../Firebase';
 const Shop = () => (
   <FirebaseContext.Consumer>
     {firebase => {
+      const values = firebase.holder;
+      console.log(values)
+     
+  }}
+  </FirebaseContext.Consumer>
+);
+
+export default Shop;
+
+/*
+{firebase => {
+      console.log(firebase)
       firebase.docRef.collection("users").add({
         first: "Alan",
         middle: "Mathison",
@@ -24,7 +36,4 @@ const Shop = () => (
 
       return <div>I've access to Firebase and render something {inst ? <h2>true</h2> : <h2>false</h2> }.</div>;
     }}
-  </FirebaseContext.Consumer>
-);
-
-export default Shop;
+*/

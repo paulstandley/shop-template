@@ -11,15 +11,27 @@ const config = {
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
 };
+
 class Firebase {
   constructor() {
     app.initializeApp(config);
-    
     this.auth = app.auth();
     this.db = app.database();
     this.firestore = app.firestore();
     this.docRef = this.firestore.doc('store/products');
+    this.docRef.collection("users").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          console.dir(doc._document.proto.fields)
+          let value = doc._document.proto.fields;
+          console.log(value.first.stringValue)
+          console.log(value.middle.stringValue)
+          console.log(value.last.stringValue)
+          console.log(value.born.integerValue)
+      });
+    });
   }
+  
+  
 
   // *** Auth API ***
   doCreateUserWithEmailAndPassword = (email, password) =>
@@ -28,15 +40,13 @@ class Firebase {
     this.auth.signInWithEmailAndPassword(email, password);
   doSignOut = () => this.auth.signOut();
   doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
-
   doPasswordUpdate = password =>
     this.auth.currentUser.updatePassword(password);
 
   // *** User API ***
-
   user = uid => this.db.ref(`users/${uid}`);
-
   users = () => this.db.ref('users');
+
 }
 
 export default Firebase;
