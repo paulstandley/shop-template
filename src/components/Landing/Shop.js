@@ -1,15 +1,11 @@
 import React from 'react';
-import  { FirebaseContext } from '../Firebase';
 
-const Shop = () => (
-  <FirebaseContext.Consumer>
-    {firebase => {
-      const values = firebase.holder;
-      console.log(values)
-     
-  }}
-  </FirebaseContext.Consumer>
-);
+const Shop = (props) => {
+  console.log(props)
+  return (
+    <h1>Yo dude</h1>
+  );
+};
 
 export default Shop;
 
@@ -36,4 +32,18 @@ export default Shop;
 
       return <div>I've access to Firebase and render something {inst ? <h2>true</h2> : <h2>false</h2> }.</div>;
     }}
+
+    <FirebaseContext.Consumer>
+    {firebase => {
+      console.log(props)
+      const values = firebase.getStoreData("users").then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          const { thing } = doc;
+            console.dir(`${thing}`);
+        });
+    });
+      console.log(values)
+     
+  }}
+  </FirebaseContext.Consumer>
 */

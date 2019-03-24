@@ -18,21 +18,11 @@ class Firebase {
     this.auth = app.auth();
     this.db = app.database();
     this.firestore = app.firestore();
-    this.docRef = this.firestore.doc('store/products');
-    this.docRef.collection("users").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-          console.dir(doc._document.proto.fields)
-          let value = doc._document.proto.fields;
-          console.log(value.first.stringValue)
-          console.log(value.middle.stringValue)
-          console.log(value.last.stringValue)
-          console.log(value.born.integerValue)
-      });
-    });
+  
   }
-  
-  
 
+  getStoreData = (page) => this.firestore.doc('store/products').collection(page).get();
+  
   // *** Auth API ***
   doCreateUserWithEmailAndPassword = (email, password) =>
     this.auth.createUserWithEmailAndPassword(email, password);
@@ -44,9 +34,9 @@ class Firebase {
     this.auth.currentUser.updatePassword(password);
 
   // *** User API ***
+
   user = uid => this.db.ref(`users/${uid}`);
   users = () => this.db.ref('users');
-
 }
 
 export default Firebase;
