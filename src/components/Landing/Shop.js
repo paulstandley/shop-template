@@ -1,9 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../../constants/routes';
+import Store from '../Landing/Store/index';
 
 const Shop = (props) => {
   console.log(props)
   return (
-    <h1>Yo dude</h1>
+    <React.Fragment>
+      <header>
+        <nav>
+          <Link to={ROUTES.STORE} component={Store}>Store</Link>
+        </nav>
+        <h1>Premier Discount</h1>
+      </header>
+      <main>
+        
+      </main>
+    </React.Fragment>
   );
 };
 

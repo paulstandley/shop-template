@@ -55,9 +55,8 @@ class Landing extends Component {
           if(this.state.gotData) {
             console.log(this.state.docFeilds.company.stringValue);
             return ( 
-            <div><button onClick={this.clicked}>click</button>
-              <h1>We Got data</h1>
-              <h2>Prouducts <strong>{this.state.docFeilds.company.stringValue}</strong> </h2>
+            <div><button  onClick={this.clicked}>click</button>
+              <h2 style={{ color: 'blue'}}>Prouducts <strong>{this.state.docFeilds.company.stringValue}</strong> </h2>
              <Shop props={this.state.docFeilds} />
             </div>
             )
