@@ -1,3 +1,15 @@
+:root {
+  --modalbg: #b2b2d8;
+  --modalcolor: #c3cdd3;
+  --shopbg: #f3f3f3;
+  --shopcolor: #c4d0e2;
+  --navbg: #e2e3e4af;
+  --navcolor: #080127;
+  --storebg: #bab3ec;
+  --storecolor: #7e809e;
+  --navgrad: linear-gradient(to right, #92cedde8 , #37284e);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +24,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
