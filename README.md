@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```BASH
 npm install react-router-dom
-npm install --save styled-components
+npm install styled-components
+npm install @material-ui/core
 npm install firebase
 npm install recompose
 ```
