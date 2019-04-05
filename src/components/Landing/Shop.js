@@ -1,27 +1,24 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-const Shop = (props) => {
-  console.log(props)
-  return (
-    <React.Fragment>
-      <header>
-        <h1>Premier Discount</h1>
-      </header>
-      <main>
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
-        <div className="carousel">
-          <a className="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1" alt="nature"/></a>
-          <a className="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2" alt="nature"/></a>
-          <a className="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3" alt="nature"/></a>
-          <a className="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4" alt="nature"/></a>
-          <a className="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5" alt="nature"/></a>
-        </div>
-      </main>
-    </React.Fragment>
-  );
-};
-
-export default Shop;
+export default class Shop extends React.Component {
+  render() {
+    return (
+      <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={58}
+        totalSlides={3}
+      >        
+        <Slider>
+          <Slide index={0}><span style={{fontSize: "3rem", background: "red"}}>Hay</span></Slide>
+          <Slide index={1}>I am the second Slide.</Slide>
+          <Slide index={2}>I am the third Slide.</Slide>
+        </Slider>
+        <ButtonBack>Back</ButtonBack>
+        <ButtonNext>Next</ButtonNext>
+      </CarouselProvider>
+    );
+  }
+}

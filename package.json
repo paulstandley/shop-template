@@ -6,6 +6,7 @@
     "@material-ui/core": "^3.9.3",
     "firebase": "^5.9.0",
     "materialize-css": "^1.0.0-rc.2",
+    "pure-react-carousel": "^1.19.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.0",
