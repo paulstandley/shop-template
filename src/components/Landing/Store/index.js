@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Store = () => {
-  console.log("Store")
+const Store = (props) => {
+  console.log(props)
   return (
     <div>
       <h1>Hi fron store</h1>
@@ -10,8 +10,3 @@ const Store = () => {
 }
 
 export default Store;
-/**
- * 
- * React dose not know about this component move it up to App app.js
- * 
- */

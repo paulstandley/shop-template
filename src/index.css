@@ -25,4 +25,14 @@ code {
     monospace;
 }
 
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel-item {
+  padding: 1rem;
+}
+
 
