@@ -10,7 +10,7 @@ export default class Shop extends React.Component {
       <React.Fragment>
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={30}
+          naturalSlideHeight={40}
           totalSlides={3}>        
           <Slider>
             <Slide index={0}>
@@ -49,16 +49,25 @@ export default class Shop extends React.Component {
 const Figure = styled.figure`
   padding: 0;
   margin: 0;
+  position: relative;
+  float: left;
   img {
     max-width: 100%;
-    max-height: 60%;
+    max-height: 40%;
+    clear: left;
   }
   figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
+    background-color: var(--navbg);
+    border: 0.2rem solid var(--navcolor);
+    color: var(--navcolors);
+    max-width: 16rem;
+    font-size: 2rem;
+    padding: 2rem;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 25%;
+    left: 42%
   }
 `;
 
