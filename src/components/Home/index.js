@@ -1,13 +1,43 @@
-import React from 'react';
-import { withAuthorization } from '../Session';
+import React, { Component } from 'react';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
-const HomePage = () => (
-  <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
-  </div>
-);
+export class MapContainer extends Component {
+  state = {
+    selectedPlace: {
+      name: "Shop"
+    }
+  }
 
-const condition = authUser => !!authUser;
+  onMarkerClick(props, marker, e) {
+    alert("hay")
+  }  
 
-export default withAuthorization(condition)(HomePage);
+  render() {
+    const style = {
+      width: '100%',
+      height: '100%'
+    }
+    return (
+      <Map google={this.props.google}
+        zoom={12}
+        style={style}
+        initialCenter={{
+          lat: 53.548532,
+          lng: -2.113063
+        }}>
+        <Marker onClick={this.onMarkerClick}
+                name={'Current location'} />
+ 
+        <InfoWindow onClose={this.onInfoWindowClose}>
+            <div>
+              <h1>{this.state.selectedPlace.name}</h1>
+            </div>
+        </InfoWindow>
+      </Map>
+    );
+  }
+}
+
+export default GoogleApiWrapper({
+  apiKey: ("AIzaSyDfprULXI83knY2om1p1NiMG-UGyUvcJ8k")
+})(MapContainer)

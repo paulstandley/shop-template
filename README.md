@@ -11,4 +11,5 @@ npm install @material-ui/core
 npm install pure-react-carousel
 npm install firebase
 npm install recompose
+npm install google-maps-react
 ```

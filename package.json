@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "babel-loader": "7",
     "firebase": "^5.9.0",
+    "google-maps-react": "^2.0.2",
     "materialize-css": "^1.0.0-rc.2",
     "pure-react-carousel": "^1.19.0",
     "react": "^16.8.4",

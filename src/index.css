@@ -3,11 +3,15 @@
   --modalcolor: #c3cdd3;
   --shopbg: #f3f3f3;
   --shopcolor: #c4d0e2;
-  --navbg: #e2e3e4af;
+  --navbg: #b4b6b071;
   --navcolor: #080127;
   --storebg: #bab3ec;
   --storecolor: #7e809e;
-  --navgrad: linear-gradient(to right, #92acb3e8 , #3e3250);
+  --navgrad: linear-gradient(to right, #8d9b9ee8 , #312641);
+}
+
+html {
+  background-color: var(--navbg);
 }
 
 body {
@@ -24,5 +28,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-

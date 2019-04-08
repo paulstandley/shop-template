@@ -7,10 +7,10 @@ import styled from 'styled-components';
 export default class Shop extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <Main>
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={40}
+          naturalSlideHeight={38}
           totalSlides={3}>        
           <Slider>
             <Slide index={0}>
@@ -38,13 +38,37 @@ export default class Shop extends React.Component {
               </React.Fragment>
             </Slide>
           </Slider>
-          <ButtonBack>Back</ButtonBack>
-          <ButtonNext>Next</ButtonNext>
+          <section>
+            <ButtonBack>Back</ButtonBack>
+            <ButtonNext>Next</ButtonNext>
+          </section>
         </CarouselProvider>
-      </React.Fragment>
+        <p>Proin eget tortor risus. Sed porttitor lectus nibh.</p>
+      </Main>
     );
   }
 }
+
+const Main = styled.main`
+  width: 100%;
+  height: 100%;
+  background-color: var(--navbg);
+  section {
+    background-color: var(--navbg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  button {
+    font-size: 2rem;
+    color: var(--navcolor);
+    border: var(--navcolor) 0.08rem ridge;
+  }
+  p {
+    text-align: center;
+  }
+`;
 
 const Figure = styled.figure`
   padding: 0;
@@ -52,8 +76,8 @@ const Figure = styled.figure`
   position: relative;
   float: left;
   img {
-    max-width: 100%;
-    max-height: 40%;
+    width: 100%;
+    min-height: 100%;
     clear: left;
   }
   figcaption {
@@ -67,7 +91,7 @@ const Figure = styled.figure`
     float: left;
     position: absolute;
     top: 25%;
-    left: 42%
+    left: 45%
   }
 `;
 
