@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import styled from 'styled-components';
 
 export class MapContainer extends Component {
   state = {
@@ -18,7 +19,10 @@ export class MapContainer extends Component {
       height: '100%'
     }
     return (
-      <Map google={this.props.google}
+     <Main>
+     
+        <Map
+        google={this.props.google}
         zoom={12}
         style={style}
         initialCenter={{
@@ -34,9 +38,15 @@ export class MapContainer extends Component {
             </div>
         </InfoWindow>
       </Map>
+        
+     </Main>
     );
   }
 }
+
+const Main = styled.main`
+  
+`;
 
 export default GoogleApiWrapper({
   apiKey: (API_KEY)
