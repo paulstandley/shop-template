@@ -45,7 +45,8 @@ export class MapContainer extends Component {
 }
 
 const Main = styled.main`
-  
+  padding: auto;
+  margin: auto;
 `;
 
 export default GoogleApiWrapper({
