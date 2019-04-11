@@ -29,11 +29,6 @@ code {
     monospace;
 }
 
-main {
-  margin-left:auto !important; 
-  margin-right:auto !important;
-}
-
 #root > div > main > div {
   height: 70% !important; 
   width :50% !important; 
