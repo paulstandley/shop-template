@@ -19,7 +19,7 @@ export class MapContainer extends Component {
 
     return (
       <React.Fragment>
-        
+  
         <Header>
           <h1>We Are Hear</h1>
         </Header>
@@ -44,6 +44,7 @@ export class MapContainer extends Component {
           </Map>
         
         </Main>
+    
       </React.Fragment>
     );
   }
@@ -52,12 +53,12 @@ export class MapContainer extends Component {
 const Header = styled.header`
   h1 {
     text-align: center;
-    color: red;
+    color: var(--navcolor);
   }
 `;
 
 const Main = styled.main`
-  padding: 3rem 0 1rem 0; 
+  padding: 2rem 0 1rem 0; 
   display: flex;
   flex-direction: column;
   align-items: center;

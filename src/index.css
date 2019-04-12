@@ -8,10 +8,11 @@
   --storebg: #bab3ec;
   --storecolor: #7e809e;
   --navgrad: linear-gradient(to right, #8d9b9ee8 , #312641);
+  --homebg: #EBE9E6;
 }
 
 html {
-  background-color: var(--navbg);
+  background-color: var(--homebg);
 }
 
 body {
@@ -24,11 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
+/* resize google map on home page*/
 #root > div > main > div {
   height: 70% !important; 
   width :50% !important; 

@@ -17,7 +17,7 @@ export default class Shop extends React.Component {
               <React.Fragment>
                 <Figure>
                   <img src="https://res.cloudinary.com/pieol2/image/upload/v1535832484/vapShop7.jpg" alt="vap shop"/>
-                  <figcaption>vap shop</figcaption>
+                  <figcaption>Welcome</figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
@@ -25,7 +25,7 @@ export default class Shop extends React.Component {
               <React.Fragment>
               <Figure>
                   <img src="https://res.cloudinary.com/pieol2/image/upload/v1535832421/vapShop6.jpg" alt="vap shop"/>
-                  <figcaption>vap shop</figcaption>
+                  <figcaption>to the</figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>

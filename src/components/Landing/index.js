@@ -9,7 +9,7 @@ class Landing extends Component {
       <FirebaseContext.Consumer>
         {firebase => {
           if(!firebase) {
-            return <Shop props={firebase} />
+            return <Shop />
           }else{
             return <Shop props={firebase} />;
           }   
