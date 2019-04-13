@@ -16,7 +16,7 @@ export default class Shop extends React.Component {
             <Slide index={0}>
               <React.Fragment>
                 <Figure>
-                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1535832484/vapShop7.jpg" alt="vap shop"/>
+                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1555170105/shop-template/resizeimage1.png" alt="vap shop"/>
                   <figcaption>Welcome</figcaption>
                 </Figure>
               </React.Fragment>
@@ -24,7 +24,7 @@ export default class Shop extends React.Component {
             <Slide index={1}>
               <React.Fragment>
               <Figure>
-                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1535832421/vapShop6.jpg" alt="vap shop"/>
+                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1555170135/shop-template/resizeimage6.jpg" alt="vap shop"/>
                   <figcaption>to the</figcaption>
                 </Figure>
               </React.Fragment>
@@ -32,7 +32,7 @@ export default class Shop extends React.Component {
             <Slide index={2}>
               <React.Fragment>
               <Figure>
-                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1535832197/vapShop3.jpg" alt="vap shop"/>
+                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1555170110/shop-template/resizeimage2.jpg" alt="vap shop"/>
                   <figcaption>vap shop</figcaption>
                 </Figure>
               </React.Fragment>
