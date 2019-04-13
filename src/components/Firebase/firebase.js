@@ -21,6 +21,8 @@ class Firebase {
     this.db = app.database();
     this.firestore = app.firestore();
     this.storage = app.storage();
+    this.storageRef = this.storage.ref();
+    this.imagesRef = this.storageRef.child('shop/store/img');
   }
 
   getStoreData = (page) => this.firestore.doc('store/products').collection(page).get();

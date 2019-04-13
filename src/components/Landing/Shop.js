@@ -16,7 +16,7 @@ export default class Shop extends React.Component {
             <Slide index={0}>
               <React.Fragment>
                 <Figure>
-                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1555170105/shop-template/resizeimage1.png" alt="vap shop"/>
+                  <img src="https://firebasestorage.googleapis.com/v0/b/shop-template-91d73.appspot.com/o/shop%2Fstore%2Fimg%2Fresizeimage5.jpg?alt=media&token=f463eb8f-77e5-4959-be34-d9b4875e7868" alt="vap shop"/>
                   <figcaption>Welcome</figcaption>
                 </Figure>
               </React.Fragment>
@@ -73,6 +73,8 @@ const Main = styled.main`
 const Figure = styled.figure`
   padding: 0;
   margin: 0;
+  width: 100%;
+  min-height: 100%;
   position: relative;
   float: left;
   img {

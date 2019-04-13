@@ -3,9 +3,10 @@ import { withFirebase } from '../../Firebase';
 
 const Store = (props) => {
   console.log(props)
-  const thing = props.firebase;
-  
-  console.log(thing) 
+  const imagesRef = props.firebase.imagesRef;
+  // imagesRef now points to 'shop/store/img'
+
+  console.log(imagesRef) 
   return (
     <div>
 
