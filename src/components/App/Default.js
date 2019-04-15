@@ -6,7 +6,7 @@ export default class Default extends Component {
     console.log(this.props);
     return (
       <Main>
-        <h1>404</h1>
+        <h1><strong>404</strong></h1>
         <h2>error</h2>
         <h3>page not found</h3>
         <h4>the requested url <span>
@@ -18,10 +18,15 @@ export default class Default extends Component {
 
 const Main = styled.main`
   text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
   h1 {
     padding: 2rem 0;
-    font-size: 3rem;
+    font-size: 5rem;
     color: red;
+    strong {
+      font-weight: bolder;
+    }
   }
   span {
     color: red;
