@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 class Storedisplay extends Component {
-  state = {  }
+  
   render() {
     console.log(this.props) 
     return ( 
       <Main>
         <header>
           <h1>Hay from store</h1>
-        </header>  
+        </header>
+          
       </Main>
      );
   }

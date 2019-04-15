@@ -11,29 +11,45 @@ export default class Shop extends React.Component {
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={38}
-          totalSlides={3}>        
+          totalSlides={5}>        
           <Slider>
             <Slide index={0}>
               <React.Fragment>
                 <Figure>
-                  <img src="https://firebasestorage.googleapis.com/v0/b/shop-template-91d73.appspot.com/o/shop%2Fstore%2Fimg%2Fresizeimage5.jpg?alt=media&token=f463eb8f-77e5-4959-be34-d9b4875e7868" alt="vap shop"/>
-                  <figcaption>Welcome</figcaption>
+                  <img src="img/resizeimage1.png" alt="vap shop"/>
+                  <figcaption>Hello</figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
             <Slide index={1}>
               <React.Fragment>
               <Figure>
-                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1555170135/shop-template/resizeimage6.jpg" alt="vap shop"/>
-                  <figcaption>to the</figcaption>
+                  <img src="img/resizeimage6.jpg" alt="vap shop"/>
+                  <figcaption>Welcom</figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
             <Slide index={2}>
               <React.Fragment>
               <Figure>
-                  <img src="https://res.cloudinary.com/pieol2/image/upload/v1555170110/shop-template/resizeimage2.jpg" alt="vap shop"/>
-                  <figcaption>vap shop</figcaption>
+                  <img src="img/resizeimage2.jpg" alt="vap shop"/>
+                  <figcaption>To The</figcaption>
+                </Figure>
+              </React.Fragment>
+            </Slide>
+            <Slide index={4}>
+              <React.Fragment>
+              <Figure>
+                  <img src="img/resizeimage3.jpg" alt="vap shop"/>
+                  <figcaption>Vap Shop</figcaption>
+                </Figure>
+              </React.Fragment>
+            </Slide>
+            <Slide index={5}>
+              <React.Fragment>
+              <Figure>
+                  <img src="img/resizeimage4.jpg" alt="vap shop"/>
+                  <figcaption>And Store</figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>

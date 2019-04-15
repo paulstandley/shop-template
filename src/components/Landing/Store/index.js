@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { FirebaseContext, withFirebase } from '../../Firebase';
 import Storedisplay from './storeComponents/Storedisplay';
+import Cart from './storeComponents/Cart';
+import Modal from './storeComponents/Modal';
 
 class Store extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      prouducts: []
+      prouducts: [],
+      modal: false,
+      inCart: false
     }
   }
   
