@@ -10,7 +10,7 @@ class Storedisplay extends Component {
         <header>
           <h1>Hay from store</h1>
         </header>
-          
+    
       </Main>
      );
   }
@@ -19,7 +19,7 @@ class Storedisplay extends Component {
 const Main = styled.main`
   background: lightgray;
   padding: 1rem;
-  margin:1rem;
+  margin: 1rem;
   header {
     text-align: center;
     background: lightblue;
