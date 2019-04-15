@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Cart extends Component {
   state = {  }
   render() { 
-    return ( null );
+    return ( <h2>Hi from Cart</h2> );
   }
 }
  
