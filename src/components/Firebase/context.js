@@ -1,6 +1,77 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const FirebaseContext = React.createContext(null);
+
+class ProductProvider extends Component {
+  state = { 
+    products: [],
+    detailProduct: "",
+    cart: [],
+    modalOpen: false,
+    modalProduct: "",
+    cartSubtotal: 0,
+    cartTax: 0,
+    cartTotal: 0
+   }
+
+   componentDidMount() {
+     console.log(this.state);
+   }
+
+   handleDetail = () => {
+     console.log("handel details");
+   }
+
+   addToCart = () => {
+    console.log("add to cart");
+   }
+
+   openModal = () => {
+     console.log("open modal");
+   }
+
+   closeModal = () => {
+     console.log("close modal");
+   }
+
+   increment = () => {
+     console.log("increment");
+   }
+
+   decrement = () => {
+     console.log("decrement");
+   }
+
+   removeItem = () => {
+     console.log("remove item");
+   }
+
+   clearCart = () => {
+     console.log("clear cart");
+   }
+
+  render() { 
+    return ( 
+      <FirebaseContext.Provider value={{
+        ...this.state,
+        handleDetail: this.handleDetail,
+        addToCart: this.addToCart,
+        openModal: this.openModal,
+        closeModal: this.closeModal,
+        increment: this.increment,
+        decrement: this.decrement,
+        removeItem: this.removeItem,
+        clearCart: this.clearCart
+      }}>
+        {this.props.children}
+      </FirebaseContext.Provider>
+     );
+  }
+}
+
+const ProductConsumer = FirebaseContext.Consumer;
+
+export { ProductProvider, ProductConsumer };
 
 export const withFirebase = Component => props => (
   <FirebaseContext.Consumer>

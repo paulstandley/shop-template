@@ -14,10 +14,7 @@ class Storedisplay extends Component {
         <header>
           <h1>Hay from store</h1>
         </header>
-        <Details />
         <Prouduct />
-        <Cart />
-        <Modal />
       </Main>
      );
   }
