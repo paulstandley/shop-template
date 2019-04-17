@@ -3,20 +3,43 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import styled from 'styled-components';
 
 export class MapContainer extends Component {
+
   state = {
-    selectedPlace: "Shop"
+    showingInfoWindow: false,
+    activeMarker: {},
+    selectedPlace: {},
+  };
+
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  
+  windowHasOpened() {
+    console.log()
+  }  
+
+  onInfoWindowClose() {
+    alert("Yo")
   }
 
-  onMarkerClick(props, marker, e) {
-    alert("hay")
-  }  
+  onMapClicked = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      })
+    }
+  };
 
   render() {
     const style = {
       width: '100%',
       height: '100%'
     }
-
+ 
     return (
       <React.Fragment>
   
@@ -24,21 +47,37 @@ export class MapContainer extends Component {
           <h1>We Are Hear</h1>
         </Header>
         <Main>
-          <Map
+          <Map 
             google={this.props.google}
             zoom={12}
             style={style}
+            onClick={this.onMapClicked}
             value="We Are Hear"
             initialCenter={{
               lat: 53.548532,
               lng: -2.113063
             }}>
-            <Marker onClick={this.onMarkerClick}
-              name={'Current location'} />
- 
-            <InfoWindow onClose={this.onInfoWindowClose}>
+            <Marker
+              animation={"1"}
+              title="Shop"
+              key='0' 
+              icon={{
+                url: require("./tag-1.png"),
+                anchor: new this.props.google.maps.Point(5, 58)
+              }} 
+              position={{
+                lat: 53.548532,
+                lng: -2.113063
+              }} 
+              onClick={this.onMarkerClick}  
+            />
+            {console.log(this.props)}
+            <InfoWindow
+              onOpen={this.windowHasOpened}
+              onClose={this.windowHasClosed}
+              visible={this.state.showingInfoWindow}>
               <div>
-                <h2>{this.state.selectedPlace}</h2>
+                <h1>{this.state.selectedPlace.name}</h1>
               </div>
             </InfoWindow>
           </Map>
