@@ -42,8 +42,8 @@ export class MapContainer extends Component {
  
     return (
       <React.Fragment>
-        <header>
-          <h1 class="flash">!!!  NOW OPEN  !!!</h1> 
+        <header style={{padding: "1rem 0", textAlign: "center", color: "red"}}>
+          <h1>WE ARE HERE</h1> 
         </header>  
         <Main>
           <Map 
@@ -61,8 +61,8 @@ export class MapContainer extends Component {
               title="Shop"
               key='0' 
               icon={{
-                url: require("./tag-1.png"),
-                anchor: new this.props.google.maps.Point(5, 58)
+                url: require("./arrow.png"),
+                anchor: new this.props.google.maps.Point(16, 16)
               }} 
               position={{
                 lat: 53.548532,

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 export default class Shop extends React.Component {
   render() {
     return (
-      <Main>
+      <Main> 
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={38}
@@ -59,7 +59,9 @@ export default class Shop extends React.Component {
             <ButtonNext>Next</ButtonNext>
           </section>
         </CarouselProvider>
-        <p>Proin eget tortor risus. Sed porttitor lectus nibh.</p>
+        <header style={{padding: "1rem 0"}}>
+          <h1 className="flash">!!!  OPEN NOW !!!</h1> 
+        </header> 
       </Main>
     );
   }

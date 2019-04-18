@@ -40,10 +40,10 @@ header > h1.flash {
   height: 1.2em;
   color: red;
   -webkit-animation-name: opennow; /* Safari 4.0 - 8.0 */
-  -webkit-animation-durationreds: 3.6s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-durationreds: 20s; /* Safari 4.0 - 8.0 */
   animation-name: opennow;
-  animation-duration: 3.6s;
-  transition-timing-function: cubic-bezier(1, 0.75, 0.5, 0.25);
+  animation-duration: 20s;
+  transition-timing-function: cubic-bezier(1, 0.5, 0.75, 0.25);
   animation-iteration-count: infinite;
 }
 
