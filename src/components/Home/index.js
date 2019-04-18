@@ -42,10 +42,9 @@ export class MapContainer extends Component {
  
     return (
       <React.Fragment>
-  
-        <Header>
-          <h1>We Are Hear</h1>
-        </Header>
+        <header>
+          <h1 class="flash">!!!  NOW OPEN  !!!</h1> 
+        </header>  
         <Main>
           <Map 
             google={this.props.google}
@@ -88,13 +87,6 @@ export class MapContainer extends Component {
     );
   }
 }
-
-const Header = styled.header`
-  h1 {
-    text-align: center;
-    color: var(--navcolor);
-  }
-`;
 
 const Main = styled.main`
   padding: 2rem 0 1rem 0; 

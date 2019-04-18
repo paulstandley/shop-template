@@ -30,3 +30,78 @@ body {
   height: 70% !important; 
   width :50% !important; 
 }
+
+header > h1.flash {
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width: 14.5em;
+  height: 1.2em;
+  color: red;
+  -webkit-animation-name: opennow; /* Safari 4.0 - 8.0 */
+  -webkit-animation-durationreds: 3.6s; /* Safari 4.0 - 8.0 */
+  animation-name: opennow;
+  animation-duration: 3.6s;
+  transition-timing-function: cubic-bezier(1, 0.75, 0.5, 0.25);
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes opennow {
+  0% {
+    color: darkred;
+    background-color: white;
+    border: 0.1em darkred ridge;
+  }
+  10% {
+    color: darkred;
+    background-color: white;
+    border: 0.1em darkred ridge;
+  }
+  20% {
+    color: red;
+    background-color: pink;
+    border: 0.1em red ridge;
+  }
+  30% {
+    color: red;
+    background-color: pink;
+    border: 0.1em red ridge;
+  }
+  40% {
+    color: red;
+    background-color: pink;
+    border: 0.1em red ridge;
+  }
+  50% {
+    color: pink;
+    background-color: red;
+    border: 0.1em pink ridge;
+  }
+  60% {
+    color: pink;
+    background-color: red;
+    border: 0.1em pink ridge;
+  }
+  70% {
+    color: pink;
+    background-color: red;
+    border: 0.1em pink ridge;
+  }
+  80% {
+    color: white;
+    background-color: darkred;
+    border: 0.1em white ridge;
+  }
+  90% {
+    color: white;
+    background-color: darkred;
+    border: 0.1em white ridge;
+  }
+  100% {
+    color: white;
+    background-color: darkred;
+    border: 0.1em white ridge;
+  }
+}

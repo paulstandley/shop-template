@@ -3,7 +3,6 @@ import 'firebase/auth';
 import 'firebase/database';
 import 'firebase/firestore';
 import 'firebase/storage';
-import { timingSafeEqual } from 'crypto';
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -23,6 +22,14 @@ class Firebase {
     this.storage = app.storage();
     this.storageRef = this.storage.ref();
     this.imagesRef = this.storageRef.child('shop/store/img');
+    this.products = [];
+    this.detailProduct = "";
+    this.cart = [];
+    this.modalOpen = false;
+    this.modalProduct = "";
+    this.cartSubtotal = 0;
+    this.cartTax = 0;
+    this.cartTotal = 0;
   }
 
   getStoreData = (page) => this.firestore.doc('store/products').collection(page).get();
@@ -41,6 +48,41 @@ class Firebase {
 
   user = uid => this.db.ref(`users/${uid}`);
   users = () => this.db.ref('users');
+
+ // *** store context ***
+
+ 
+ handleDetail = () => {
+    console.log("handel details");
+  }
+
+  addToCart = () => {
+    console.log("add to cart");
+  }
+
+  openModal = () => {
+    console.log("open modal");
+  }
+
+  closeModal = () => {
+    console.log("close modal");
+  }
+
+  increment = () => {
+    console.log("increment");
+  }
+
+  decrement = () => {
+    console.log("decrement");
+  }
+
+  removeItem = () => {
+    console.log("remove item");
+  }
+
+  clearCart = () => {
+    console.log("clear cart");
+  }
 }
 
 export default Firebase;

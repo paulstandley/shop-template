@@ -13,7 +13,7 @@ class AdminPage extends Component {
 
   componentDidMount() {
     this.setState({ loading: true });
-    console.log(this.props)
+    console.log(this.props);
     this.props.firebase.users().on('value', snapshot => {
       const usersObject = snapshot.val();
       console.log(usersObject)
@@ -43,10 +43,6 @@ class AdminPage extends Component {
         {loading && <div>Loading ...</div>}
 
         <UserList users={users} />
-
-        <div>
-          <h2>Upload Images</h2>
-        </div>
 
       </div>
     );

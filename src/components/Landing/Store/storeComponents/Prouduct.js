@@ -1,15 +1,8 @@
-import React from 'react'
-import { FirebaseContext, ProductProvider, ProductConsumer } from '../../../Firebase/context';
+import React from 'react';
 
 const Prouduct = () => {
   return (
-    <ProductConsumer>
-      {storeData => (
-        <h2 onClick={() => {
-          console.log(storeData)
-        }}>Hi all</h2>   
-    )}
-    </ProductConsumer>
+  <h2>HAy from propucts</h2>
   )
 }
 
