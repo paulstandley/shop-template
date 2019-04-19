@@ -3,6 +3,7 @@ import { FirebaseContext, withFirebase } from '../../Firebase';
 import Storedisplay from './storeComponents/Storedisplay';
 import Cart from './storeComponents/Cart';
 import Modal from './storeComponents/Modal';
+import ProuductList from './storeComponents/ProuductList';
 
 class Store extends Component {
   constructor(props) {
@@ -19,18 +20,10 @@ class Store extends Component {
  
 }
 
-// return firbase context
+
 render() {   
   return ( 
-    <FirebaseContext.Consumer>
-      {firebase => {
-        if(!firebase) {
-          return <Storedisplay />
-        }else{
-          return <Storedisplay props={firebase} />;
-        }   
-      }}
-    </FirebaseContext.Consumer>
+    <ProuductList props={this.state} />
    );
 }
 }

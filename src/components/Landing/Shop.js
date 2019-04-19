@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import styled from 'styled-components';
+import './displayCSS.css';
 
 export default class Shop extends React.Component {
   render() {

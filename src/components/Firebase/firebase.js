@@ -30,6 +30,7 @@ class Firebase {
     this.cartSubtotal = 0;
     this.cartTax = 0;
     this.cartTotal = 0;
+    this.addTotals = this.addTotals.bind(this);
   }
 
   getStoreData = (page) => this.firestore.doc('store/products').collection(page).get();
@@ -82,6 +83,14 @@ class Firebase {
 
   clearCart = () => {
     console.log("clear cart");
+  }
+
+  addTotals = () => {
+    let subTotal = 0;
+    const tempTax = subTotal * 0.1;
+    const tax = parseFloat(tempTax.toFixed(2));
+    const total = subTotal + tax;
+    console.log(subTotal);
   }
 }
 

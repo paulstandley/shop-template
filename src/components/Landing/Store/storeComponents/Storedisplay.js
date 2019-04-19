@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Details from './Details';
 import Modal from './Modal';
-import Prouduct from './Prouduct';
+import ProuductList from './ProuductList';
 import Cart from './Cart';
 
 class Storedisplay extends Component {
@@ -14,7 +14,7 @@ class Storedisplay extends Component {
         <header>
           <h1>Hay from store</h1>
         </header>
-        <Prouduct />
+        <ProuductList />
       </Main>
      );
   }

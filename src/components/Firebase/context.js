@@ -8,6 +8,8 @@ export const withFirebase = Component => props => (
   </FirebaseContext.Consumer>
 );
 
+const FirebaseProvider = FirebaseContext.Provider;
+
 export default FirebaseContext;
 
 /* 

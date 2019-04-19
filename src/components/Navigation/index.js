@@ -41,7 +41,7 @@ const NavigationAuth = () => (
 const NavigationNonAuth = () => (
   <Ul>
     <Li>
-      <Link to={ROUTES.LANDING}>LANDING</Link>
+      <Link to={ROUTES.LANDING}>SHOP</Link>
     </Li>
     <Li>
       <Link to={ROUTES.STORE}>STORE</Link>
