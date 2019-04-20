@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import styled from 'styled-components';
-import './displayCSS.css';
+import '../../displayCSS.css';
 
 export default class Shop extends React.Component {
   render() {
@@ -123,13 +123,12 @@ const Figure = styled.figure`
     border: 0.2rem solid var(--navcolor);
     color: var(--navcolors);
     max-width: auto;
-    font-size: 2rem;
     padding: 2rem;
     display: block;
     float: left;
     position: absolute;
-    top: 10%;
-    left: 15%
+    top: 14%;
+    left: 14%
   }
 `;
 
