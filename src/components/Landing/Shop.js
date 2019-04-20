@@ -18,7 +18,11 @@ export default class Shop extends React.Component {
               <React.Fragment>
                 <Figure>
                   <img src="img/resizeimage1.png" alt="vap shop"/>
-                  <figcaption>Hello</figcaption>
+                  <figcaption>
+                    <header>
+                      <h1 className="flash">!!!  OPEN NOW !!!</h1> 
+                    </header>
+                  </figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
@@ -26,7 +30,11 @@ export default class Shop extends React.Component {
               <React.Fragment>
               <Figure>
                   <img src="img/resizeimage6.jpg" alt="vap shop"/>
-                  <figcaption>Welcom</figcaption>
+                  <figcaption>
+                    <header>
+                      <h1 className="flash">!!!  WELCOME !!!</h1> 
+                    </header>
+                  </figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
@@ -34,7 +42,11 @@ export default class Shop extends React.Component {
               <React.Fragment>
               <Figure>
                   <img src="img/resizeimage2.jpg" alt="vap shop"/>
-                  <figcaption>To The</figcaption>
+                  <figcaption>
+                    <header>
+                      <h1 className="flash">!!! TO THE !!!</h1> 
+                    </header>
+                  </figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
@@ -42,7 +54,11 @@ export default class Shop extends React.Component {
               <React.Fragment>
               <Figure>
                   <img src="img/resizeimage3.jpg" alt="vap shop"/>
-                  <figcaption>Vap Shop</figcaption>
+                  <figcaption>
+                    <header>
+                      <h1 className="flash">!!! SHOP !!!</h1> 
+                    </header>
+                  </figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
@@ -50,7 +66,11 @@ export default class Shop extends React.Component {
               <React.Fragment>
               <Figure>
                   <img src="img/resizeimage4.jpg" alt="vap shop"/>
-                  <figcaption>And Store</figcaption>
+                  <figcaption>
+                    <header>
+                      <h1 className="flash">!!!  AND STORE !!!</h1> 
+                    </header>
+                  </figcaption>
                 </Figure>
               </React.Fragment>
             </Slide>
@@ -59,10 +79,7 @@ export default class Shop extends React.Component {
             <ButtonBack>Back</ButtonBack>
             <ButtonNext>Next</ButtonNext>
           </section>
-        </CarouselProvider>
-        <header style={{padding: "1rem 0"}}>
-          <h1 className="flash">!!!  OPEN NOW !!!</h1> 
-        </header> 
+        </CarouselProvider> 
       </Main>
     );
   }
@@ -105,14 +122,14 @@ const Figure = styled.figure`
     background-color: var(--navbg);
     border: 0.2rem solid var(--navcolor);
     color: var(--navcolors);
-    max-width: 16rem;
+    max-width: auto;
     font-size: 2rem;
     padding: 2rem;
     display: block;
     float: left;
     position: absolute;
-    top: 25%;
-    left: 45%
+    top: 10%;
+    left: 15%
   }
 `;
 
