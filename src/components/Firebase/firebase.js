@@ -33,7 +33,7 @@ class Firebase {
     this.addTotals = this.addTotals.bind(this);
   }
 
-  getStoreData = (page) => this.firestore.doc('store/products').collection(page).get();
+  getStoreData = (page) => this.firestore.doc('store/yMSFIEDsZGIqLsCchmAQ').collection(page).get();
   
   // *** Auth API ***
   doCreateUserWithEmailAndPassword = (email, password) =>

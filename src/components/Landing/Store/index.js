@@ -17,15 +17,17 @@ class Store extends Component {
   
   componentDidMount() {
     console.log(this.props)
- 
-}
+    const STOREDATA = this.props.firebase.getStoreData("prouducts").then((data) => {
+      console.log(data)
+    });
+    
+  }
 
-
-render() {   
-  return ( 
-    <ProuductList props={this.state} />
-   );
-}
+  render() {   
+    return ( 
+      <ProuductList props={this.state} />
+    );
+  }
 }
 
 export default withFirebase(Store);

@@ -5,11 +5,11 @@ header > h1.flash {
   padding: 0;
   width: 14.5em;
   height: 1.2em;
-  color: red;
+  color: black;
   -webkit-animation-name: opennow; /* Safari 4.0 - 8.0 */
-  -webkit-animation-durationreds: 20s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-durationreds: 10s; /* Safari 4.0 - 8.0 */
   animation-name: opennow;
-  animation-duration: 20s;
+  animation-duration: 10s;
   transition-timing-function: cubic-bezier(1, 0.5, 0.75, 0.25);
   animation-iteration-count: infinite;
 }
@@ -17,59 +17,59 @@ header > h1.flash {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes opennow {
   0% {
-    color: darkred;
-    background-color: white;
-    border: 0.1em darkred ridge;
+    color: var(--homebg);
+    background-color: var(--storecolor);
+    border: 0.1em var(--homebg) ridge;
   }
   10% {
-    color: darkred;
-    background-color: white;
-    border: 0.1em darkred ridge;
+    color: var(--homebg);
+    background-color: var(--storecolor);
+    border: 0.1em var(--homebg) ridge;
   }
   20% {
-    color: red;
-    background-color: pink;
-    border: 0.1em red ridge;
+    color: var(--shopcolor);
+    background-color: var(--navbg);
+    border: 0.1em var(--shopcolor) ridge;
   }
   30% {
-    color: red;
-    background-color: pink;
-    border: 0.1em red ridge;
+    color: var(--shopcolor);
+    background-color: var(--navbg);
+    border: 0.1em var(--shopcolor) ridge;
   }
   40% {
-    color: red;
-    background-color: pink;
-    border: 0.1em red ridge;
+    color: var(--shopcolor);
+    background-color: var(--navbg);
+    border: 0.1em var(--shopcolor) ridge;
   }
   50% {
-    color: pink;
-    background-color: red;
-    border: 0.1em pink ridge;
+    color: var(--navbg);
+    background-color: var(--shopcolor);
+    border: 0.1em var(--navbg) ridge;
   }
   60% {
-    color: pink;
-    background-color: red;
-    border: 0.1em pink ridge;
+    color: var(--navbg);
+    background-color: var(--shopcolor);
+    border: 0.1em var(--navbg) ridge;
   }
   70% {
-    color: pink;
-    background-color: red;
-    border: 0.1em pink ridge;
+    color: var(--navbg);
+    background-color: var(--shopcolor);
+    border: 0.1em var(--navbg) ridge;
   }
   80% {
-    color: white;
-    background-color: darkred;
-    border: 0.1em white ridge;
+    color: var(--storecolor);
+    background-color: var(--homebg);
+    border: 0.1em var(--storecolor) ridge;
   }
   90% {
-    color: white;
-    background-color: darkred;
-    border: 0.1em white ridge;
+    color: var(--storecolor);
+    background-color: var(--homebg);
+    border: 0.1em var(--storecolor) ridge;
   }
   100% {
-    color: white;
-    background-color: darkred;
-    border: 0.1em white ridge;
+    color: var(--storecolor);
+    background-color: var(--homebg);
+    border: 0.1em var(--storecolor) ridge;
   }
 }
 
@@ -81,71 +81,70 @@ header > h1.flash {
     padding: 0;
     width: 10em;
     height: 1em;
-    color: red;
+    color: black;
     -webkit-animation-name: opennow; /* Safari 4.0 - 8.0 */
-    -webkit-animation-durationreds: 20s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-durationreds: 10s; /* Safari 4.0 - 8.0 */
     animation-name: opennow;
-    animation-duration: 20s;
+    animation-duration: 10s;
     transition-timing-function: cubic-bezier(1, 0.5, 0.75, 0.25);
     animation-iteration-count: infinite;
   }
-  
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes opennow {
     0% {
-      color: darkred;
-      background-color: white;
-      border: 0.1em darkred ridge;
+      color: var(--homebg);
+      background-color: var(--storecolor);
+      border: 0.1em var(--homebg) ridge;
     }
     10% {
-      color: darkred;
-      background-color: white;
-      border: 0.1em darkred ridge;
+      color: var(--homebg);
+      background-color: var(--storecolor);
+      border: 0.1em var(--homebg) ridge;
     }
     20% {
-      color: red;
-      background-color: pink;
-      border: 0.1em red ridge;
+      color: var(--shopcolor);
+      background-color: var(--navbg);
+      border: 0.1em var(--shopcolor) ridge;
     }
     30% {
-      color: red;
-      background-color: pink;
-      border: 0.1em red ridge;
+      color: var(--shopcolor);
+      background-color: var(--navbg);
+      border: 0.1em var(--shopcolor) ridge;
     }
     40% {
-      color: red;
-      background-color: pink;
-      border: 0.1em red ridge;
+      color: var(--shopcolor);
+      background-color: var(--navbg);
+      border: 0.1em var(--shopcolor) ridge;
     }
     50% {
-      color: pink;
-      background-color: red;
-      border: 0.1em pink ridge;
+      color: var(--navbg);
+      background-color: var(--shopcolor);
+      border: 0.1em var(--navbg) ridge;
     }
     60% {
-      color: pink;
-      background-color: red;
-      border: 0.1em pink ridge;
+      color: var(--navbg);
+      background-color: var(--shopcolor);
+      border: 0.1em var(--navbg) ridge;
     }
     70% {
-      color: pink;
-      background-color: red;
-      border: 0.1em pink ridge;
+      color: var(--navbg);
+      background-color: var(--shopcolor);
+      border: 0.1em var(--navbg) ridge;
     }
     80% {
-      color: white;
-      background-color: darkred;
-      border: 0.1em white ridge;
+      color: var(--storecolor);
+      background-color: var(--homebg);
+      border: 0.1em var(--storecolor) ridge;
     }
     90% {
-      color: white;
-      background-color: darkred;
-      border: 0.1em white ridge;
+      color: var(--storecolor);
+      background-color: var(--homebg);
+      border: 0.1em var(--storecolor) ridge;
     }
     100% {
-      color: white;
-      background-color: darkred;
-      border: 0.1em white ridge;
+      color: var(--storecolor);
+      background-color: var(--homebg);
+      border: 0.1em var(--storecolor) ridge;
     }
   }
 }
