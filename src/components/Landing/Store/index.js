@@ -11,7 +11,8 @@ class Store extends Component {
     this.state = {
       prouducts: [],
       modal: false,
-      inCart: false
+      inCart: false,
+      jsonPlaceHolder: []
     }
   }
   
@@ -20,8 +21,14 @@ class Store extends Component {
     const STOREDATA = this.props.firebase.getStoreData("prouducts").then((data) => {
       console.log(data)
     });
-    
+    fetch('https://jsonplaceholder.typicode.com/photos/')
+  .then(response => response.json())
+  .then(json => {
+    console.log(json)
+    this.setState({jsonPlaceHolder: json});
+  })
   }
+  
 
   render() {   
     return ( 
