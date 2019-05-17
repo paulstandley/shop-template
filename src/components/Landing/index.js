@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FirebaseContext, withFirebase } from '../Firebase';
 import Shop from './Shop';
+import Carousel from './Carousel';
 
 class Landing extends Component {
 // return firbase context
@@ -11,7 +12,7 @@ class Landing extends Component {
           if(!firebase) {
             return <Shop />
           }else{
-            return <Shop props={firebase} />;
+            return <Carousel props={firebase} />;
           }   
         }}
       </FirebaseContext.Consumer>

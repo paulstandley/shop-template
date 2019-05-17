@@ -12,4 +12,7 @@ npm install pure-react-carousel
 npm install firebase
 npm install recompose
 npm install google-maps-react
+npm install react-spring
+npm install react-use-gesture
+npm install lodash-es
 ```
