@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { FirebaseContext, withFirebase } from '../../Firebase';
 import Storedisplay from './storeComponents/Storedisplay';
-import Cart from './storeComponents/Cart';
-import Modal from './storeComponents/Modal';
-import ProuductList from './storeComponents/ProuductList';
 
 class Store extends Component {
   constructor(props) {
@@ -32,7 +29,7 @@ class Store extends Component {
 
   render() {   
     return ( 
-      <ProuductList props={this.state} />
+      <Storedisplay props={this.state} />
     );
   }
 }
