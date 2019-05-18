@@ -12,7 +12,7 @@ class Storedisplay extends Component {
     return ( 
       <Main>
         <header>
-          <h1>Welcom to the store</h1>
+          <h1>Welcome to the store</h1>
         </header>
         <ProuductList />
       </Main>
@@ -26,7 +26,7 @@ const Main = styled.main`
   margin: 1rem;
   header {
     text-align: center;
-    background: lightblue;
+    background: var(--storecolor);
     padding: 0;
     margin: 0;
     h1 {
