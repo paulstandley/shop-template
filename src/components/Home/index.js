@@ -42,8 +42,10 @@ export class MapContainer extends Component {
  
     return (
       <React.Fragment>
-        <header style={{padding: "1rem 0", textAlign: "center", color: "red"}}>
-          <h1>WE ARE HERE</h1> 
+        <header style={{padding: "0", textAlign: "center", color: "red"}}>
+          <h1>WE ARE HERE</h1>
+          <h2>257 Ripponden Road OL1 4HR</h2>
+          <h3>TEL: 0191 376 681</h3> 
         </header>  
         <Main>
           <Map 
@@ -53,8 +55,8 @@ export class MapContainer extends Component {
             onClick={this.onMapClicked}
             value="We Are Hear"
             initialCenter={{
-              lat: 53.548532,
-              lng: -2.113063
+              lat: 53.603547,
+              lng: -2.035250
             }}>
             <Marker
               animation={"1"}
@@ -65,8 +67,8 @@ export class MapContainer extends Component {
                 anchor: new this.props.google.maps.Point(16, 16)
               }} 
               position={{
-                lat: 53.548532,
-                lng: -2.113063
+                lat: 53.603547,
+                lng: -2.035250
               }} 
               onClick={this.onMarkerClick}  
             />
@@ -80,9 +82,8 @@ export class MapContainer extends Component {
               </div>
             </InfoWindow>
           </Map>
-        
+
         </Main>
-    
       </React.Fragment>
     );
   }
