@@ -12,7 +12,7 @@ class Storedisplay extends Component {
     return ( 
       <Main>
         <header>
-          <h1>Welcome to the store</h1>
+          <h1>Welcome to Ashes Store</h1>
         </header>
         <ProuductList />
       </Main>

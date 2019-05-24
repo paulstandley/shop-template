@@ -97,5 +97,5 @@ const Main = styled.main`
 `;
 
 export default GoogleApiWrapper({
-  apiKey: (API_KEY)
+  apiKey: ("AIzaSyDm6UWaF3iBL3mVqjFBHe2Tpvm8z2L5EEM")
 })(MapContainer)
