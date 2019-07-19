@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Details from './Details';
-import Modal from './Modal';
+import Modal from './modal';
 import ProuductList from './ProuductList';
 import Cart from './Cart';
 

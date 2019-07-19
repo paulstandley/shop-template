@@ -43,9 +43,8 @@ export class MapContainer extends Component {
     return (
       <React.Fragment>
         <header style={{padding: "0", textAlign: "center", color: "red"}}>
-          <h1>WE ARE HERE</h1>
-          <h2>257 Ripponden Road OL1 4HR</h2>
-          <h3>TEL: 0191 376 681</h3> 
+          <h1>257 Ripponden Road OL1 4HR</h1>
+          <h2>TEL: 0191 376 681</h2> 
         </header>  
         <Main>
           <Map 
@@ -97,5 +96,5 @@ const Main = styled.main`
 `;
 
 export default GoogleApiWrapper({
-  apiKey: (API_KEY)
+  apiKey: ("AIzaSyDm6UWaF3iBL3mVqjFBHe2Tpvm8z2L5EEM")
 })(MapContainer)
