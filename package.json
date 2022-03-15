@@ -7,7 +7,7 @@
     "babel-loader": "7",
     "firebase": "^5.9.0",
     "google-maps-react": "^2.0.2",
-    "lodash-es": "^4.17.11",
+    "lodash-es": "^4.17.21",
     "pure-react-carousel": "^1.19.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
